@@ -58,7 +58,13 @@ section {
 .section1 {
     background-color: #D1BBAA;
 }
+.section1 img{
+    position: absolute;
+    width: 617px;
+    height: 700px;
+    right: 50px;
 
+}
 .section2 {
     background-color: #C2AB99;
 }
@@ -73,11 +79,12 @@ section {
 
 nav {
     width: 100vw;
-    padding: 1em 0 1.5em;
+    padding: 1em 0 1em;
     position: fixed;
     display: flex;
     justify-content: flex-end;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .nav-item {
@@ -102,12 +109,13 @@ nav {
 .team-wrapper,
 .about-wrapper,
 .merch-wrapper {
-    width: 80vw;
+    width: 81vw;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 2em;
+    font-size: 24px;
 }
 
 #about > h1 {
@@ -119,7 +127,11 @@ nav {
 
 .about-wrapper {
     flex-direction: column;
+    width: 40vw;
+    margin-left: -725px;
+
 }
+
 
 .about-wrapper p{
     width: 100%;
@@ -140,25 +152,29 @@ nav {
 .team-item-top,
 .merch-item-top {
     width: 100%;
-    aspect-ratio: 1/1;
     background-size: cover;
     border: 5px solid white;
     border-radius: 50%;
     box-sizing: border-box;
 }
+.team-item-top{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 5px;
+}
 
 .team1 .team-item-top {
-    background: url(https://learn.algoritmika.org/uploads/2022/11/astr1.png);
+    background: url(https://s0.rbk.ru/v6_top_pics/media/img/1/15/756243589156151.jpg);
     background-size: cover;
 }
 
 .team2 .team-item-top {
-    background: url(https://learn.algoritmika.org/uploads/2022/11/astr2.png);
+    background: url(https://everest-dom.com/sites/default/files/uploads/news/11_1.jpg);
     background-size: cover;
 }
 
 .team3 .team-item-top {
-    background: url(https://learn.algoritmika.org/uploads/2022/11/astr3.png);
+    background: url(https://s0.rbk.ru/v6_top_pics/media/img/5/60/756281458904605.jpg);
     background-size: cover;
 }
 

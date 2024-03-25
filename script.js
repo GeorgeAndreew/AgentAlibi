@@ -13,65 +13,6 @@ function scrollDown() {
 let button = document.querySelector('.arrow-next')
 button.addEventListener('click', scrollDown)
 
-// Код, который нужно исправить
-let item_name_objects = document.querySelectorAll('.merch-item-name')
-let item_names = ['Тарелка', 'Кружка', 'Ракета', 'Марсоход']
-for (let i = 0; i < item_names.length; i += 1) {
-   item_name_objects[i].innerHTML = item_names[i]
-}
-
-let item_descriptions = ['Тарелка с принтом Марса. Доступна в красном и белом цветах', 'Кружка с принтом Марса. Доступа в красном и белом цветах', 'Масштабная модель одной из ракет Galaxy', 'Масштабная модель масохода (мы покупаем их у NASA)']
-let item_prices = [1000, 1000, 2500, 5000]
-let item_description_objects = document.querySelectorAll('.merch-item-descr')
-let item_price_objects = document.querySelectorAll('.merch-item-price')
-for (let i = 0; i < item_description_objects.length; i += 1) {
-   item_description_objects[i].innerHTML = item_descriptions[i]
-   item_price_objects[i].innerHTML = item_prices[i]
-}
-
-
-let total_price = 0
-let cart_items_count = document.querySelector('.cart-amount')
-let add_to_cart_buttons = document.querySelectorAll('.add-to-cart-btn')
-let cart_button = document.querySelectorAll('.nav-item')[4]
-let cart_button_text = cart_button.querySelector('.cart-text')
-for (let i = 0; i < add_to_cart_buttons.length; i += 1) {
-  add_to_cart_buttons[i].addEventListener('click', function() {
-      cart_items_count.innerHTML = +cart_items_count.innerHTML + 1
-      total_price += item_prices[i]
-      if (cart_button_text.innerHTML != 'Корзина') {
-          cart_button_text.innerHTML = total_price
-      }
-  })
-}
-cart_button.addEventListener('click', function() {
-  if (cart_button_text.innerHTML == 'Корзина') {
-      cart_button_text.innerHTML = total_price
-  } else {
-      cart_button_text.innerHTML = 'Корзина'
-  }
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Код, который меняет тему
 function change_theme() {
    let header = document.querySelector('header')
