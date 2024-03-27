@@ -7,7 +7,7 @@ team2.style.height = `${height}px`
 team3.style.height = `${height}px`
 
 function scrollDown() {
-    window.scrollTo({top: window.innerHeight, behavior: 'smooth' });
+    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
 }
 let button = document.querySelector('.arrow-next')
 button.addEventListener('click', scrollDown)
@@ -17,23 +17,20 @@ button.addEventListener('click', scrollDown)
 function make_transparent() {
     send_btn.style.backgroundColor = 'transparent'
 }
- 
+
 function make_colorful() {
     send_btn.style.backgroundColor = '#C2AB99'
 }
 
 let send_btn = document.querySelector('.submit-btn-send')
 
-send_btn.addEventListener('mouseenter', make_transparent)
-send_btn.addEventListener('mouseleave', make_colorful)
- 
-//nav appearing
+
 const nav = document.querySelector('nav')
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     if (this.window.scrollY > 900) {
-        nav.style.display='flex'
+        nav.style.display = 'flex'
     }
     else {
-        nav.style.display='none'
-    }    
+        nav.style.display = 'none'
+    }
 }) 
