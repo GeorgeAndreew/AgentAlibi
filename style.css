@@ -21,7 +21,6 @@ header {
     color: white;
     flex-direction: column;
 }
-
 .arrow-next {
     font-size: 5em;
     margin: 0;
@@ -45,7 +44,7 @@ main {
 section {
     width: 100%;
     min-height: 100vh;
-    background: #D1BBAA;
+    background: #fcf3ec;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +55,7 @@ section {
 }
 
 .section1 {
-    background-color: #D1BBAA;
+    background-color: #e2deda;
 }
 .section1 img{
     position: absolute;
@@ -66,22 +65,23 @@ section {
 
 }
 .section2 {
-    background-color: #C2AB99;
+    background-color: #ccc9c7;
 }
 
 .section4 {
-    background-color: #D1BBAA;
+    background-color: #e2deda;
 }
 
 .section3 {
-    background-color: #C2AB99;
+    background-color: #ccc9c7;
 }
+
 
 nav {
     width: 100vw;
     padding: 1em 0 1em;
     position: fixed;
-    display: flex;
+    display: none;
     justify-content: flex-end;
     box-sizing: border-box;
     z-index: 100;
@@ -90,9 +90,9 @@ nav {
 .nav-item {
     width: fit-content;
     padding: .5em;
-    border: 2px solid white;
+    border: 2px solid #212121;
     border-radius: 5px;
-    color: white;
+    color: #212121;
     margin-right: 1em;
     user-select: none;
     cursor: pointer;
@@ -137,6 +137,8 @@ nav {
     width: 100%;
 }
 
+
+
 .team-item,
 .merch-item {
     width: 22vw;
@@ -160,7 +162,6 @@ nav {
 .team-item-top{
     width: 400px;
     height: 400px;
-    margin-bottom: 5px;
 }
 
 .team1 .team-item-top {
@@ -184,6 +185,7 @@ nav {
 }
 
 .merch-item-bottom {
+    padding-top: 5px;
     width: 100%;
 }
 
