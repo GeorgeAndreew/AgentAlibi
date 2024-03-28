@@ -1,0 +1,13 @@
+@media screen and (max-width: 1300px) {
+    .blocker{
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #212121;
+        z-index: 10;
+        align-items: center;
+        color: #ffffff;
+        font-size: 14px;
+    }
+}
